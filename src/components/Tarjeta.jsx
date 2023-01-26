@@ -1,4 +1,4 @@
-import foto from "../assets/perfiiil.jpg"
+import foto from "../assets/foto-perfil.webp"
 
 function Tarjeta(){
     return (
