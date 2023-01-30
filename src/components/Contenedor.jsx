@@ -1,12 +1,13 @@
 import Menu from "./Menu"
+import { Outlet } from "react-router-dom"
 
-function Contenedor({children}){
+function Contenedor(){
     return(
         <>
             <div className="w-screen h-screen flex justify-center items-center">
                 <div className="flex w-full justify-center ">
                     <div className="p-9 w-5/6 rounded-3xl bg-opacity-50 bg-white">
-                        {children}
+                        <Outlet />
                     </div>
                     <div className="self-center">
                         <Menu />
