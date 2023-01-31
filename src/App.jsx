@@ -1,14 +1,13 @@
-import { useState } from 'react'
-
+import Contenedor from "./components/Contenedor";
+import Background from "./components/Background";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className="App">
-      <h1>Hola</h1>
+      <Background />
+      <Contenedor />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
