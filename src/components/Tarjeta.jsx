@@ -1,27 +1,18 @@
-import foto from "../assets/foto-perfil.webp"
+function Tarjeta({src,titulo,eActivo,setActivo}){
 
-function Tarjeta(){
-    return (
+    const activo = titulo === eActivo
+
+    return(
         <>
-            <div className="p-3 inline-block">
-                <div className="flex flex-col gap-y-2">
-                    <div>
-                        <img 
-                        className="rounded-full border-4 border-gray-600 
-                        max-w-xs lg:max-w-sm"
-                        src={foto} alt="foto-de-perfil-xiao" />
-                    </div>
+            <div className="w-3/4 bg-slate-300 h-28 rounded-lg relative" onClick={()=> setActivo(titulo)} >
 
-                    <h2 className="text-center text-2xl lg:text-3xl">Esteban Sayago</h2>
-
-                    <div className=" flex justify-center gap-x-3">
-
-                        <div className=" inline-block p-5 bg-slate-400 rounded-full"></div>
-                        <div className=" inline-block p-5 bg-slate-400 rounded-full"></div>
-
-                    </div>
+                <img src={src} alt=""  className="rounded-lg w-full max-h-full object-cover object-center blur-[2px] " />
+                <div className={`absolute top-0 left-0 bg-black w-full h-full rounded-lg text-white bg-opacity-40 text-center flex flex-col justify-center p-2 ${activo&& "bg-opacity-80"}`}>
+                    <h2 className={`text-2xl ${activo && "text-lime-600"}`}>{titulo}</h2>
                 </div>
+
             </div>
+
         </>
     )
 }
