@@ -6,7 +6,7 @@ function BotonMenu({ name, isActive, onClick }){
             <Link
                 onClick={()=> onClick(name)}
                 to={name}
-                className={`w-11 bg-white inline-block rounded-r-lg h-32 transition-all opacity-30
+                className={`w-11 bg-white inline-block rounded-r-sm h-32 transition-[width] ease-in  opacity-30
                 ${isActive ? ' opacity-50 w-16': ''}`}
                 >   
             </Link>
