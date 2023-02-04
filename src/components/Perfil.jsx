@@ -1,4 +1,6 @@
 import foto from "../assets/foto-perfil.webp"
+import linkedin from "../assets/linkedin.svg"
+import github from  "../assets/github.svg"
 
 function Perfil(){
     return (
@@ -16,8 +18,13 @@ function Perfil(){
 
                     <div className=" flex justify-center gap-x-3">
 
-                        <div className=" inline-block p-5 bg-slate-400 rounded-full"></div>
-                        <div className=" inline-block p-5 bg-slate-400 rounded-full"></div>
+                        <img 
+                        className="w-9"
+                        src={linkedin} alt="linkedin-svg" />
+
+                        <img 
+                        className="w-9"
+                        src={github} alt="github-svg" />
 
                     </div>
                 </div>
