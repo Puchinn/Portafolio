@@ -3,30 +3,30 @@ import { useState } from "react"
 
 function Menu(){
 
-    const [activeButton, setActiveButton] = useState('/');
-    const handleButtonClick = (name) => {
-        setActiveButton(name);
+    const [activeButton, setActiveButton] = useState('/')
+
+    const handleButtonClick = (url) => {
+        setActiveButton(url);
     }
-
-
 
     return(
         <>
             <nav className="flex flex-col space-y-5">
                 <BotonMenu 
-                    name="/" 
-                    isActive={activeButton === '/'} 
+                    url="/" 
                     onClick={handleButtonClick}
+                    activeButton={activeButton}
+
                 />
                 <BotonMenu 
-                    name="proyectos" 
-                    isActive={activeButton === 'proyectos'} 
+                    url="proyectos" 
                     onClick={handleButtonClick}
+                    activeButton={activeButton}
                 />
                 <BotonMenu 
-                    name="contacto" 
-                    isActive={activeButton === 'contacto'} 
+                    url="contacto" 
                     onClick={handleButtonClick}
+                    activeButton={activeButton}
                 />
             </nav>
         </>
