@@ -1,33 +1,12 @@
 import BotonMenu from "./BotonMenu"
-import { useState } from "react"
 
-function Menu(){
-
-    const [activeButton, setActiveButton] = useState('/')
-
-    const handleButtonClick = (url) => {
-        setActiveButton(url);
-    }
-
-    return(
+function Menu() {
+    return (
         <>
             <nav className="flex flex-col space-y-5">
-                <BotonMenu 
-                    url="/" 
-                    onClick={handleButtonClick}
-                    activeButton={activeButton}
-
-                />
-                <BotonMenu 
-                    url="proyectos" 
-                    onClick={handleButtonClick}
-                    activeButton={activeButton}
-                />
-                <BotonMenu 
-                    url="contacto" 
-                    onClick={handleButtonClick}
-                    activeButton={activeButton}
-                />
+                <BotonMenu url="/" />
+                <BotonMenu url="proyectos" />
+                <BotonMenu url="contacto" />
             </nav>
         </>
     )

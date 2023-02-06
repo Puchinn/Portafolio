@@ -1,18 +1,12 @@
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
-function BotonMenu({ url, onClick, activeButton }){
-
-    const isActive = url === activeButton
-    
-    return(
-        <>  
-            <Link
-                onClick={()=> onClick(url)}
+function BotonMenu({ url }) {
+    return (
+        <>
+            <NavLink
                 to={url}
-                className={`w-11 bg-white inline-block rounded-r-sm h-32 transition-[width] ease-in  opacity-30
-                ${isActive ? ' opacity-50 w-16': ''}`}
-                >   
-            </Link>
+                className={`h-32 w-11 rounded-r-sm bg-white opacity-30 transition-[width] ease-in [&.active]:w-14 [&.active]:opacity-50`}
+            ></NavLink>
         </>
     )
 }
