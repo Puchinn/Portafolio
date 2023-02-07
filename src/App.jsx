@@ -1,13 +1,14 @@
-import Contenedor from "./components/Contenedor";
-import Background from "./components/Background";
+import Contenedor from "./components/Contenedor"
+import Background from "./components/Background"
+import ContextContainer from "./context/darkTheme"
 
 function App() {
-  return (
-    <div className="App">
-      <Background />
-      <Contenedor />
-    </div>
-  );
+    return (
+        <ContextContainer>
+            <Contenedor />
+            <Background />
+        </ContextContainer>
+    )
 }
 
-export default App;
+export default App
