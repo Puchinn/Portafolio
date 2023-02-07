@@ -1,4 +1,4 @@
-import SobreMitext from "../components/SobreMi"
+import SobreMitext from "../components/SobreMitext"
 import Foto from "../components/Foto"
 import Teconologias from "../components/Tecnologias"
 
