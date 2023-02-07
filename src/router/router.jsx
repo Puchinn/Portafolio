@@ -1,29 +1,33 @@
-import { createBrowserRouter } from 'react-router-dom'
-import ErrorPage from '../pages/Error-Page'
-import App from '../App'
-import Principal from "../pages/Principal"
-import Proyectos from '../pages/Proyectos'
+import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import App from "../App"
+import ErrorPage from "../pages/Error-Page"
+import Inicio from "../pages/Inicio"
+import SobreMi from "../pages/SobreMi"
 
-const router = createBrowserRouter([
+const rutas = createBrowserRouter([
     {
-        path:"/",
-        element:<App />,
+        path: "/",
+        element: <App />,
         errorElement: <ErrorPage />,
-        children:[
+        children: [
             {
-                path:"/",
-                element:<Principal />
+                path: "/",
+                element: <Inicio />,
             },
             {
-                path:"proyectos",
-                element:<Proyectos />
+                path: "proyectos",
+                element: <SobreMi />,
             },
             {
-                path:"contacto",
-                element: <h1>:p</h1>
-            }
-        ]
+                path: "contacto",
+                element: <h1>:p</h1>,
+            },
+        ],
     },
 ])
 
-export default router
+function Router() {
+    return <RouterProvider router={rutas} />
+}
+
+export default Router
