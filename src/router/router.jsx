@@ -15,7 +15,7 @@ const rutas = createBrowserRouter([
                 element: <Inicio />,
             },
             {
-                path: "proyectos",
+                path: "sobremi",
                 element: <SobreMi />,
             },
             {
