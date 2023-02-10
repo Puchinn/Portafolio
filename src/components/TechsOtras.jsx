@@ -5,7 +5,9 @@ function TechsOtras() {
     return (
         <>
             <div className="space-y-2">
-                <h1 className="text-center text-lg text-gray-800">Otras:</h1>
+                <h1 className="text-center text-lg text-gray-800">
+                    Herramientas:
+                </h1>
                 <div className="flex space-x-2">
                     <img className="w-14" src={git} alt="git_svg" title="Git" />
                     <img className="w-14" src={npm} alt="npm_svg" />
