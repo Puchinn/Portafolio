@@ -1,15 +1,12 @@
-function Icono({url,titulo}){
-    return(
+function Icono({ url, titulo }) {
+    return (
         <>
-            <div 
-            className="hover:cursor-pointer w-20 hover:-translate-y-2 relative transition-all group flex flex-col items-center">
-                
-                <span 
-                className="rounded-2xl bg-gray-500 text-white border-gray-700 border-2 text-center max-w-min px-2 mb-2 hidden absolute -top-9 group-hover:inline-block text-base">
-                    
-                {titulo}</span>
+            <div className="group relative flex w-20 flex-col items-center transition-all hover:-translate-y-2 hover:cursor-pointer">
+                <span className="absolute -top-9 mb-2 hidden max-w-min rounded-2xl border-2 border-gray-700 bg-gray-500 px-2 text-center text-base text-white group-hover:inline-block">
+                    {titulo}
+                </span>
 
-                <img src={url} alt={titulo}/>
+                <img src={url} alt={titulo} />
             </div>
         </>
     )
