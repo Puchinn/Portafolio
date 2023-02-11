@@ -1,45 +1,42 @@
-function Proyecto ({src,titulo,desc,}){
-
-    return(
-
+function Proyecto({ src, titulo, desc, links }) {
+    return (
         <>
-            <div className="bg-white bg-opacity-60 shadow-md  rounded-3xl p-4 w-10/12 h-5/6">
+            <section className={`relative w-full`}>
+                <img
+                    className="absolute inset-0 h-full w-full object-cover"
+                    src={src}
+                    alt=""
+                />
+                <div className="absolute inset-0 bg-white/75 sm:bg-transparent sm:bg-gradient-to-r sm:from-white/95 sm:to-white/25"></div>
+                <div className="relative px-4 py-16 sm:px-6 lg:flex  lg:items-center lg:px-8">
+                    <div className="max-w-xl text-center sm:text-left">
+                        <h1 className="text-3xl font-extrabold text-rose-700 sm:text-5xl">
+                            {titulo}
+                        </h1>
 
-                <div className="h-full flex flex-col">
+                        <p className="mt-4 max-w-lg sm:text-xl sm:leading-relaxed">
+                            {desc}
+                        </p>
 
-                    <img src={src} className="w-full object-cover h-60 rounded-2xl" />
-                    <div className="flex flex-col w-full h-full py-2">
+                        <div className="mt-8 flex flex-wrap gap-4 text-center">
+                            <a
+                                href={links.demo}
+                                className="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
+                            >
+                                Go demo
+                            </a>
 
-                        <div className="py-2">
-                            <h2 className="text-lg font-medium">{titulo}</h2>
-                            <div className="flex text-sm text-gray-500">
-                                <div className="flex-1 inline-flex items-center">
-                                    <p className="">{desc}</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="h-full flex flex-col justify-end">
-                            <div className="flex text-sm font-medium justify-self-end justify-end pt-4 pb-2 border-t border-gray-200 ">
-                                    <button
-                                        className="md:mb-0 bg-white px-4 py-2 shadow-sm tracking-wider border text-gray-600 rounded-full hover:bg-gray-100 inline-flex items-center space-x-2 ">
-                                        <span>Code</span>
-                                    </button>
-                                    <button
-                                        className="md:mb-0 bg-gray-900 px-5 py-2 shadow-sm tracking-wider text-white rounded-full hover:bg-gray-800"
-                                        type="button" aria-label="like"
-                                        >
-                                        Demo
-                                    </button>
-                            </div>
+                            <a
+                                href={links.github}
+                                className="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
+                            >
+                                See code
+                            </a>
                         </div>
                     </div>
-
                 </div>
-
-            </div>
+            </section>
         </>
-
     )
 }
 
