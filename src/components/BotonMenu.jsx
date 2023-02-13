@@ -5,7 +5,7 @@ function BotonMenu({ url }) {
         <>
             <NavLink
                 to={url}
-                className={`h-32 w-11 rounded-r-sm bg-white opacity-30 transition-[width] ease-in [&.active]:w-14 [&.active]:opacity-50`}
+                className={`h-24 w-11 rounded-r-sm bg-white opacity-30 transition-[width] ease-in [&.active]:w-14 [&.active]:opacity-50`}
             ></NavLink>
         </>
     )
