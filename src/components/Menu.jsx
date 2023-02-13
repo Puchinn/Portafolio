@@ -7,6 +7,7 @@ function Menu() {
                 <BotonMenu url="/" />
                 <BotonMenu url="sobremi" />
                 <BotonMenu url="proyectos" />
+                <BotonMenu url="contacto" />
             </nav>
         </>
     )
