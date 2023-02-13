@@ -4,6 +4,7 @@ import ErrorPage from "../pages/Error-Page"
 import Inicio from "../pages/Inicio"
 import SobreMi from "../pages/SobreMi"
 import Proyectos from "../pages/Proyectos"
+import Contacto from "../pages/Contacto"
 
 const rutas = createBrowserRouter([
     {
@@ -22,6 +23,10 @@ const rutas = createBrowserRouter([
             {
                 path: "proyectos",
                 element: <Proyectos />,
+            },
+            {
+                path: "contacto",
+                element: <Contacto />,
             },
         ],
     },
