@@ -2,8 +2,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import App from "../App"
 import ErrorPage from "../pages/Error-Page"
 import Inicio from "../pages/Inicio"
-import SobreMi from "../pages/SobreMi"
-import Proyectos from "../pages/Proyectos"
+import Sobre_Mi from "../pages/Sobre_Mi/Sobre_Mi"
+import Proyectos from "../pages/Seccion_Proyectos/Proyectos"
 import Contacto from "../pages/Contacto"
 import Estudios from "../pages/Estudios"
 
@@ -19,7 +19,7 @@ const rutas = createBrowserRouter([
             },
             {
                 path: "sobremi",
-                element: <SobreMi />,
+                element: <Sobre_Mi />,
             },
             {
                 path: "proyectos",
