@@ -1,7 +1,7 @@
 import { useState } from "react"
 import Mostrar_Proyecto_Actual from "./components/Mostrar_Proyecto_Actual"
 import lista_de_proyectos from "../../info/listaProyectos"
-import Titulo_de_Pagina from "../../components/Titulo_De_Pagina"
+import Titulo_de_Pagina from "../../components/Titulo_de_Pagina"
 import Boton_Mover_Proyectos from "./components/Boton_mover_proyectos"
 
 function Proyectos() {
