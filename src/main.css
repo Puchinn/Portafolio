@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .fondo_animado {
+        background: linear-gradient(25deg, #020202, #090909, #aaaaaa, #010101, #000000, #000000, #000000);
+        background-size: 1400% 1400%;
+    }
+}
