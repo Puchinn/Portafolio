@@ -1,7 +1,7 @@
 import Texto_Sobre_Mi from "./components/Texto_Sobre_Mi"
 import Foto from "./components/Foto"
 import Seccion_Tecnologias from "./components/Seccion_Tecnologias"
-import Titulo_de_Pagina from "../../components/Titulo_De_Pagina"
+import Titulo_de_Pagina from "../../components/Titulo_de_Pagina"
 
 function Sobre_Mi() {
     return (
