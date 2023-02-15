@@ -8,7 +8,7 @@ function ContextContainer({ children }) {
     return (
         <>
             <ThemeContext.Provider value={[isDark, setIsDark]}>
-                <div className={`App ${!isDark && "dark"}`}>{children}</div>
+                <div className={`App ${isDark && "dark"}`}>{children}</div>
             </ThemeContext.Provider>
         </>
     )
