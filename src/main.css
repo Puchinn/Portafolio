@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .fondo_animado_oscuro {
+        background: linear-gradient(
+            25deg,
+            #020202,
+            #090909,
+            #aaaaaa,
+            #010101,
+            #000000,
+            #000000,
+            #000000
+        );
+        background-size: 1400% 1400%;
+    }
+    .fondo_animado_claro {
+        background: linear-gradient(
+            25deg,
+            #fdcae1,
+            #fdcae1,
+            #fdf9c4,
+            #fdcae1,
+            #fdcae1,
+            #fdcae1,
+            #fdcae1
+        );
+        background-size: 1400% 1400%;
+    }
+}

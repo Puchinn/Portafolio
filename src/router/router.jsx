@@ -6,15 +6,20 @@ import Sobre_Mi from "../pages/Sobre_Mi/Sobre_Mi"
 import Proyectos from "../pages/Seccion_Proyectos/Proyectos"
 import Contacto from "../pages/Contacto"
 import Estudios from "../pages/Estudios"
+import Intro from "../pages/Intro"
 
 const rutas = createBrowserRouter([
     {
         path: "/",
-        element: <App />,
+        element: <Intro />,
         errorElement: <ErrorPage />,
+    },
+    {
+        path: "/portafolio",
+        element: <App />,
         children: [
             {
-                path: "/",
+                path: "portafolio",
                 element: <Inicio />,
             },
             {
@@ -33,8 +38,8 @@ const rutas = createBrowserRouter([
                 path: "estudios",
                 element: <Estudios />,
             },
-        ],
-    },
+        ]
+    }
 ])
 
 function Router() {

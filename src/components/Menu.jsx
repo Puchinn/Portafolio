@@ -4,7 +4,7 @@ function Menu() {
     return (
         <>
             <nav className="flex flex-col space-y-5">
-                <BotonMenu url="/" />
+                <BotonMenu url="portafolio" />
                 <BotonMenu url="sobremi" />
                 <BotonMenu url="proyectos" />
                 <BotonMenu url="contacto" />
