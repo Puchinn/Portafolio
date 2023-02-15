@@ -1,6 +1,6 @@
 import { createContext, useState } from "react"
 
-const ThemeContext = createContext(null)
+export const ThemeContext = createContext(null)
 
 function ContextContainer({ children }) {
     const [isDark, setIsDark] = useState(false)

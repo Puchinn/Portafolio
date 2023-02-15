@@ -5,8 +5,6 @@ import Inicio from "../pages/Inicio"
 import Sobre_Mi from "../pages/Sobre_Mi/Sobre_Mi"
 import Proyectos from "../pages/Seccion_Proyectos/Proyectos"
 import Contacto from "../pages/Contacto"
-import Estudios from "../pages/Estudios"
-import Intro from "../pages/Intro"
 
 const rutas = createBrowserRouter([
     {
@@ -34,12 +32,8 @@ const rutas = createBrowserRouter([
                 path: "contacto",
                 element: <Contacto />,
             },
-            {
-                path: "estudios",
-                element: <Estudios />,
-            },
-        ]
-    }
+        ],
+    },
 ])
 
 function Router() {
