@@ -5,8 +5,7 @@ function Contenedor() {
     return (
         <>
             <div className="flex h-screen w-screen items-center justify-center">
-                <div className="relative flex min-h-[800px] w-5/6 items-center justify-center rounded-2xl bg-white  bg-opacity-20 backdrop-blur-md">
-                    <Outlet />
+                <div className="relative flex min-h-[700px] w-3/4 items-center justify-center bg-white bg-opacity-60 rounded-2xl border backdrop-blur-sm">
                 </div>
             </div>
         </>
