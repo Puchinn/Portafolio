@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 function Intro() {
     return (
-        <div className="fondo_animado grid h-screen w-full animate-backanimado items-center bg-black text-center">
+        <div className="fondo_animado_claro grid h-screen w-full animate-backanimado items-center text-center">
             <div className="animate-text-focus-in">
                 <p className="font-serif text-xl tracking-wider text-slate-500 ">
                     Esteban Sayago
