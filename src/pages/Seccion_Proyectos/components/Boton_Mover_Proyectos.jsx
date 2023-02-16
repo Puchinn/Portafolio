@@ -1,9 +1,10 @@
 import Flecha_SVG from "./Flecha_SVG"
 
-function Boton_Mover_Proyectos({ direccion, setProyecto, longitud, indiceActual }) {
+function Boton_Mover_Proyectos({ direccion, setProyecto, longitud, indiceActual, setMover }) {
     
     const avanzar = () => {
         setProyecto(indiceActual + 1)
+        setMover(true)
         if (indiceActual + 1 > longitud) {
             setProyecto(0)
         }
@@ -11,6 +12,7 @@ function Boton_Mover_Proyectos({ direccion, setProyecto, longitud, indiceActual 
 
     const retroceder = () => {
         setProyecto(indiceActual - 1)
+        setMover(false)
         if (indiceActual - 1 < 0) {
             setProyecto(longitud)
         }
