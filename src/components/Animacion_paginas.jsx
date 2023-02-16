@@ -4,7 +4,7 @@ function Animacion_paginas({ children }) {
     return (
         <motion.div
         className="w-full"
-            initial={{ translateY: "150%" }}
+            initial={{ translateY: "200%" }}
             animate={{ translateY: 0 }}
             transition={{ duration: 0.6, ease: "backInOut" }}
         >
