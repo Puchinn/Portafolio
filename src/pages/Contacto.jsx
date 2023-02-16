@@ -1,7 +1,9 @@
+import Animacion_paginas from "../components/Animacion_paginas"
+
 function Contacto() {
     return (
-        <>
-            <div className="text-center max-w-4xl space-y-3">
+        <Animacion_paginas>
+            <div className="max-w-4xl space-y-3 text-center mx-auto">
                 <h1 className="text-3xl">
                     Casi es el final y queria decirte gracias por pasarte por
                     aqui!
@@ -12,7 +14,9 @@ function Contacto() {
                     permitira visualizar el documento y si quieres tambien
                     descargarlo.
                 </p>
-                <button className="bg-slate-300 py-2 px-6 rounded-lg">Ver CV</button>
+                <button className="rounded-lg bg-slate-300 py-2 px-6">
+                    Ver CV
+                </button>
                 <h1 className="text-xl">Contacta conmigo</h1>
                 <div className="space-x-4">
                     <button className="hover:underline">Linkedin</button>
@@ -20,9 +24,12 @@ function Contacto() {
                     <button className="hover:underline">Email</button>
                     <button className="hover:underline">Instagram</button>
                 </div>
-                <h1 className="text-lg">Por ultimo puedes ver mis certificaciones y cursos donde he estudiado</h1>
+                <h1 className="text-lg">
+                    Por ultimo puedes ver mis certificaciones y cursos donde he
+                    estudiado
+                </h1>
             </div>
-        </>
+        </Animacion_paginas>
     )
 }
 
