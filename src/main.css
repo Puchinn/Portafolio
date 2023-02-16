@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+    overflow: hidden;
+}
+
 @layer components {
     .fondo_animado_oscuro {
         background: linear-gradient(
