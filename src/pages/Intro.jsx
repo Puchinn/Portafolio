@@ -4,9 +4,9 @@ import { ThemeContext } from "../context/darkTheme"
 
 
 function Intro() {
-    const [isDark] = useContext(ThemeContext)
+    const [color] = useContext(ThemeContext)
     return (
-        <div className={`${isDark ? "fondo_animado_oscuro" : "fondo_animado_claro"}  grid h-screen w-full animate-backanimado items-center text-center`}>
+        <div className={`${color === "dark" ? "fondo_animado_oscuro" : "fondo_animado_claro"}  grid h-screen w-full animate-backanimado items-center text-center`}>
             <div className="animate-text-focus-in">
                 <p className="font-serif text-xl tracking-wider text-slate-500 ">
                     Esteban Sayago

@@ -2,11 +2,15 @@ import { useContext } from "react"
 import { ThemeContext } from "../context/darkTheme"
 
 function BotonDM() {
-    const [isDark, setIsDark] = useContext(ThemeContext)
+    const [color, setColor] = useContext(ThemeContext)
 
     return (
         <button
-            onClick={() => setIsDark(!isDark)}
+            onClick={() => {
+                const newColorMode = color === 'dark' ? 'light' : 'dark'
+                setColor(newColorMode)
+                localStorage.setItem('colorMode', newColorMode)
+            }}
             className="animate-text-focus-in absolute top-3 right-10 rounded-full p-3 opacity-80 hover:bg-black hover:bg-opacity-10 hover:opacity-100 dark:hover:bg-white dark:hover:bg-opacity-20"
         >
             <svg
