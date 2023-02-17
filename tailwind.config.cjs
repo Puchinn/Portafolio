@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        "text-focus-in": "text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both",
+        "text-focus-in": "text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.5s both",
         "tracking-in-contract": "tracking-in-contract 2.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.5s both",
         "backanimado": "backanimado 30s ease infinite",
         "wobble-hor-bottom": "wobble-hor-bottom 0.8s 1 2.8s both"
