@@ -5,51 +5,30 @@ function BotonDM() {
     const [isDark, setIsDark] = useContext(ThemeContext)
 
     return (
-        <label htmlFor="darkMode">
-            <input type="checkbox" id="darkMode" className="peer" hidden />
-            <div
-                onClick={() => setIsDark(!isDark)}
-                className="inline-flex gap-x-2 rounded-md bg-black bg-opacity-10 p-1 hover:cursor-pointer peer-checked:[&>.first]:bg-white peer-checked:[&>.first]:opacity-100 
-                peer-checked:[&>.last]:bg-transparent peer-checked:[&>.last]:opacity-30"
+        <button
+            onClick={() => setIsDark(!isDark)}
+            className="animate-text-focus-in absolute top-3 right-10 rounded-full p-3 opacity-80 hover:bg-black hover:bg-opacity-10 hover:opacity-100 dark:hover:bg-white dark:hover:bg-opacity-20"
+        >
+            <svg
+                className="h-auto w-20 fill-white dark:fill-[#c5c6c8] "
+                xmlns="http://www.w3.org/2000/svg"
+                width="472.39"
+                height="472.39"
+                viewBox="0 0 472.39 472.39"
             >
-                <div className="first rounded  px-2  py-1 opacity-30">
-                    <svg
-                        fill="#000"
-                        width="25"
-                        height="25"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <g id="SVGRepo_bgCarrier" strokeWidth="0" />
-                        <g
-                            id="SVGRepo_tracerCarrier"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                        />
-                        <g id="SVGRepo_iconCarrier">
-                            <path d="M19.878,16.941A9.528,9.528,0,0,1,11.569,22,9.811,9.811,0,0,1,2,11.984,9.854,9.854,0,0,1,10.923,2a1.034,1.034,0,0,1,.912.458,1,1,0,0,1,.036,1.019,8.278,8.278,0,0,0-.72,1.785,1,1,0,1,1-1.929-.528c.037-.135.077-.269.119-.4A7.989,7.989,0,0,0,4,11.984,7.811,7.811,0,0,0,11.569,20a7.4,7.4,0,0,0,5.568-2.6,9.352,9.352,0,0,1-5.335-2.7,1,1,0,0,1,1.416-1.412,7.23,7.23,0,0,0,5.622,2.177,1.053,1.053,0,0,1,.957.453A1,1,0,0,1,19.878,16.941ZM20.5,13v-.5H21a1,1,0,0,0,0-2h-.5V10a1,1,0,0,0-2,0v.5H18a1,1,0,0,0,0,2h.5V13a1,1,0,0,0,2,0Zm-4-11a1,1,0,0,0-1,1v.5H15a1,1,0,0,0,0,2h.5V6a1,1,0,0,0,2,0V5.5H18a1,1,0,0,0,0-2h-.5V3A1,1,0,0,0,16.5,2Zm-6,10a1,1,0,0,0,1-1v-.5H12a1,1,0,0,0,0-2h-.5V8a1,1,0,0,0-2,0v.5H9a1,1,0,0,0,0,2h.5V11A1,1,0,0,0,10.5,12Z" />
-                        </g>
-                    </svg>
-                </div>
-                <div className="last rounded bg-white px-2 py-1 shadow">
-                    <svg
-                        width="25"
-                        height="25"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path
-                            d="M12 6V3M12 6C8.6863 6 6 8.68629 6 12M12 6C15.3137 6 18 8.68629 18 12M18 12H21M18 12C18 15.3137 15.3137 18 12 18M16.2426 7.75736L18.364 5.63604M12 21V18M12 18C8.6863 18 6 15.3137 6 12M3 12H6M5.63605 18.364L7.75737 16.2426M16.2426 16.2424L18.364 18.3638M5.63607 5.636L7.75739 7.75732"
-                            stroke="#000"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                        />
-                    </svg>
-                </div>
-            </div>
-        </label>
+                <g className="toggle-sun rotate-0 [transform-origin:center_center] [transition:transform_750ms] dark:rotate-[0.5turn] ">
+                    <path d="M403.21,167V69.18H305.38L236.2,0,167,69.18H69.18V167L0,236.2l69.18,69.18v97.83H167l69.18,69.18,69.18-69.18h97.83V305.38l69.18-69.18Zm-167,198.17a129,129,0,1,1,129-129A129,129,0,0,1,236.2,365.19Z" />
+                </g>
+                <g className="toggle-circle [transition:transform_500ms_ease-out] dark:translate-x-[-15%]">
+                    <circle
+                        className="cls-1"
+                        cx="236.2"
+                        cy="236.2"
+                        r="103.78"
+                    />
+                </g>
+            </svg>
+        </button>
     )
 }
 
