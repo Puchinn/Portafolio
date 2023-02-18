@@ -3,7 +3,7 @@ import Animacion_paginas from "../components/Animacion_paginas"
 function Contacto() {
     return (
         <Animacion_paginas>
-            <div className="max-w-4xl space-y-3 text-center mx-auto">
+            <div className="max-w-4xl space-y-3 text-center mx-auto dark:text-white">
                 <h1 className="text-3xl">
                     Casi es el final y queria decirte gracias por pasarte por
                     aqui!
