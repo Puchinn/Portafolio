@@ -1,9 +1,16 @@
-import bg from "../assets/t2.svg"
+import bgClaro from "../assets/t2.svg"
+import bgOscuro from "../assets/t2o.svg"
+import { useContext } from "react"
+import { ThemeContext } from "../context/darkTheme"
+
 function Background() {
+    const [color] = useContext(ThemeContext)
     return (
         <>
-            <div className="absolute top-0 left-0 -z-10 h-screen w-screen bg-no-repeat bg-cover"  style={{backgroundImage:`url(${bg})`}}></div>
-            <div className="absolute h-screen w-screen -z-10 bg-black top-0 bg-opacity-40 hidden dark:block"></div>
+            <div
+                className="absolute top-0 left-0 -z-10 h-screen w-screen bg-cover bg-no-repeat"
+                style={{ backgroundImage: `url(${color === "dark" ? bgOscuro : bgClaro})` }}
+            ></div>
         </>
     )
 }
