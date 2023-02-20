@@ -7,13 +7,11 @@ import Animacion_paginas from "../../components/Animacion_paginas"
 function Sobre_Mi() {
     return (
         <Animacion_paginas>
-            <div className="max-w-5xl mx-auto">
-                <Titulo_de_Pagina titulo={"Sobre Mi"} />
-                <div className="flex items-center gap-x-7 border-y border-gray-300 p-5 py-12">
-                    <Foto />
-                    <div className="space-y-6 border-x-2 border-gray-700 dark:border-white px-4">
+            <div className="mx-auto max-w-5xl ">
+                <Titulo_de_Pagina titulo={"¡ Bienvenido !"} />
+                <div className="flex items-center gap-x-7 px-6 pt-4 pb-12">
+                    <div className="border-l-2 border-gray-700 px-4 dark:border-white">
                         <Texto_Sobre_Mi />
-                        <Seccion_Tecnologias />
                     </div>
                 </div>
             </div>
