@@ -3,10 +3,9 @@ import Intro from "../pages/Intro"
 import App from "../App"
 import Contenedor from "../components/Contenedor"
 import Sobre_Mi from "../pages/Sobre_Mi/Sobre_Mi"
-import Proyectos from "../pages/Seccion_Proyectos/Proyectos"
-import Contacto from "../pages/Contacto"
-import Inicio from "../pages/Inicio"
+import Contacto from "../pages/Contacto/Contacto"
 import ContextContainer from "../context/darkTheme"
+import Trabajo from "../pages/Trabajo"
 
 const rutas = createBrowserRouter([
     {
@@ -26,16 +25,12 @@ const rutas = createBrowserRouter([
                 element: <Contenedor />,
                 children: [
                     {
-                        path: "inicio",
-                        element: <Inicio />,
-                    },
-                    {
                         path: "sobremi",
                         element: <Sobre_Mi />,
                     },
                     {
-                        path: "proyectos",
-                        element: <Proyectos />,
+                        path: "trabajo",
+                        element: <Trabajo />,
                     },
                     {
                         path: "contacto",
