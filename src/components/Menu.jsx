@@ -2,10 +2,9 @@ import BotonMenu from "./BotonMenu"
 
 function Menu() {
     return (
-        <nav className="flex flex-col space-y-5">
-            <BotonMenu url="inicio" />
+        <nav className="flex flex-col space-y-5 ">
             <BotonMenu url="sobremi" />
-            <BotonMenu url="proyectos" />
+            <BotonMenu url="trabajo" />
             <BotonMenu url="contacto" />
         </nav>
     )

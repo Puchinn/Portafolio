@@ -1,6 +1,6 @@
-function Titulo_de_Pagina({titulo}) {
+function Titulo_de_Pagina({ titulo }) {
     return (
-        <h1 className="py-5 pl-10 text-4xl font-thin text-slate-700 dark:text-white">
+        <h1 className="border-b border-gray-400 py-5 pl-10 text-4xl font-thin text-slate-700 dark:text-white">
             {titulo}
         </h1>
     )
