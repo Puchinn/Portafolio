@@ -16,19 +16,19 @@ const rutas = createBrowserRouter([
                 element: <Intro />,
             },
             {
-                path: "portafolio",
+                path: "/portafolio",
                 element: <Contenedor />,
                 children: [
                     {
-                        path: "sobremi",
+                        path: "/portafolio/sobremi",
                         element: <Sobre_Mi />,
                     },
                     {
-                        path: "trabajo",
+                        path: "/portafolio/trabajo",
                         element: <Trabajo />,
                     },
                     {
-                        path: "contacto",
+                        path: "/portafolio/contacto",
                         element: <Contacto />,
                     },
                 ],
