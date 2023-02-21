@@ -7,7 +7,12 @@ function Notificacion({ setMostrar }) {
                 </p>
 
                 <button
-                    onClick={() => setMostrar(false)}
+                    onClick={ async () => {
+                        setMostrar(false)
+                        setTimeout(()=>{
+                            window.location.reload()
+                        },500)
+                    }}
                     className="shrink-0 rounded-lg bg-black/10 p-1 transition hover:bg-black/20"
                 >
                     <svg
