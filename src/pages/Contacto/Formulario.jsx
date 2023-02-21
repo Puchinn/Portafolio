@@ -1,44 +1,47 @@
 function Formulario() {
     return (
-        <div>
-            <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-                <div className="mx-auto max-w-lg">
-                    <h1 className="text-xl">
-                        Formulario de contacto
-                    </h1>
+        <div className="w-full rounded-2xl border-4 border-[#b0c2f2] dark:border-white py-3 px-4 ">
+            <h1 className="text-center text-xl text-gray-700 tracking-wide dark:text-white ">Formulario de contacto</h1>
+
+            <form action="" className="mx-auto mt-2 mb-0 space-y-2">
+                <div className="flex flex-col text-start">
+                    <label className="text-base text-gray-700 dark:text-white" for="nombre">
+                        Nombre :
+                    </label>
+                    <input
+                        id="nombre"
+                        type="text"
+                        className=" rounded-md border-4 border-gray-300 dark:text-black p-3 text-base outline-none"
+                        placeholder="Escribe tu nombre"
+                    />
                 </div>
-
-                <form action="" className="mx-auto mt-4 mb-0 max-w-md space-y-4">
-                    <div>
-                        <label for="email" className="sr-only">
-                            Email
-                        </label>
-
-                        <div className="relative">
-                            <input
-                                type="email"
-                                className="w-full rounded-md border-gray-200 p-4 text-sm shadow-sm"
-                                placeholder="Nombre"
-                            />
-
-                        </div>
-                    </div>
-
-                    <div>
-                        <label for="password" className="sr-only">
-                            Password
-                        </label>
-
-                        <div className="relative">
-                            <input
-                                type="password"
-                                className="w-full rounded-lg border-gray-200 p-4 pr-12 text-sm shadow-sm"
-                                placeholder="Enter password"
-                            />
-                        </div>
-                    </div>
-                </form>
-            </div>
+                <div className="flex flex-col text-start">
+                    <label className="text-base text-gray-700 dark:text-white" for="email">
+                        Email :
+                    </label>
+                    <input
+                        id="email"
+                        type="email"
+                        className=" rounded-md border-4 border-gray-300 dark:text-black p-3 text-base outline-none"
+                        placeholder="Escribe tu email"
+                    />
+                </div>
+                <div className="flex flex-col text-start">
+                    <label className="text-base text-gray-700 dark:text-white" for="mensanje">
+                        Mensaje :
+                    </label>
+                    <textarea
+                        placeholder="Ej: Me gustaria trabajar contigo"
+                        className="rounded-md border-4 border-gray-300 dark:text-black p-3 text-base outline-none"
+                        id="mensaje"
+                        cols="30"
+                        rows="5"
+                    ></textarea>
+                </div>
+                <button className="w-full text-lg rounded-lg bg-blue-500 hover:bg-blue-400 py-2 text-white">
+                    Enviar
+                </button>
+            </form>
         </div>
     )
 }
