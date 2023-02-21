@@ -7,14 +7,14 @@ function BotonDM() {
     return (
         <button
             onClick={() => {
-                const newColorMode = color === 'dark' ? 'light' : 'dark'
+                const newColorMode = color === "dark" ? "light" : "dark"
                 setColor(newColorMode)
-                localStorage.setItem('colorMode', newColorMode)
+                localStorage.setItem("colorMode", newColorMode)
             }}
-            className="animate-text-focus-in absolute top-3 right-10 rounded-full p-3 opacity-80 hover:bg-black hover:bg-opacity-10 hover:opacity-100 dark:hover:bg-white dark:hover:bg-opacity-20"
+            className="absolute top-3 right-10 animate-text-focus-in rounded-full p-3 opacity-80 hover:bg-white hover:bg-opacity-20 hover:opacity-100"
         >
             <svg
-                className="h-auto w-20 fill-white dark:fill-[#c5c6c8] "
+                className="h-auto w-20 fill-white "
                 xmlns="http://www.w3.org/2000/svg"
                 width="472.39"
                 height="472.39"

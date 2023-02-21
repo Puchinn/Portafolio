@@ -1,5 +1,5 @@
 import bgClaro from "../assets/t2.svg"
-import bgOscuro from "../assets/t2o.svg"
+import bgOscuro from "../assets/t4.svg"
 import { useContext } from "react"
 import { ThemeContext } from "../context/darkTheme"
 
