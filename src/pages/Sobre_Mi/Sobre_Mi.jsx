@@ -1,6 +1,4 @@
 import Texto_Sobre_Mi from "./components/Texto_Sobre_Mi"
-import Foto from "./components/Foto"
-import Seccion_Tecnologias from "./components/Seccion_Tecnologias"
 import Titulo_de_Pagina from "../../components/Titulo_de_Pagina"
 import Animacion_paginas from "../../components/Animacion_paginas"
 
