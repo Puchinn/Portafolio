@@ -14,12 +14,12 @@ function Intro() {
                 <h1 className="text-7xl text-white">Desarrollador Web</h1>
                 <h1 className="text-6xl text-rose-600">Front-End</h1>
                 <Link
-                    to="portafolio/inicio"
+                    to="portafolio/sobremi"
                     className="group relative mt-5 inline-block animate-wobble-hor-bottom text-sm font-medium text-white focus:outline-none focus:ring"
                 >
                     <span className="absolute inset-0 border border-rose-600 group-active:border-rose-500"></span>
                     <span className="block animate-tracking-in-contract border border-rose-600 bg-rose-600 px-12 py-3 transition-transform active:border-rose-500 active:bg-rose-500 group-hover:-translate-x-1 group-hover:-translate-y-1">
-                        Ver Portafolio
+                    Conocer Perfil
                     </span>
                 </Link>
             </div>
