@@ -2,15 +2,17 @@ import Iconos_Front_End from "./Iconos_Front_End"
 
 function Texto_Sobre_Mi() {
     return (
-        <div className="space-y-5 px-4 text-left text-lg tracking-wider text-gray-900 dark:text-gray-100">
-            <p>
-                ¡Encantado de conocerte! 👋. <br></br>
-                Soy Esteban, un estudiante autodidacta del mundo del desarrollo
-                web. Me dedico a estudiar la creación de sitios y aplicaciones
-                web, con objetivos claros de ser un desarrollador web
-                full-stack.
-            </p>
-            <div className="space-y-2 ">
+        <div className="space-y-4 px-4 text-lg tracking-wider text-gray-900 dark:text-gray-100 md:text-left">
+            <div>
+                <p>¡Encantado de conocerte! 👋</p>
+                <p>
+                    Soy Esteban, un estudiante autodidacta del mundo del
+                    desarrollo web. Me dedico a estudiar la creación de sitios y
+                    aplicaciones web, con objetivos claros de ser un
+                    desarrollador web full-stack.
+                </p>
+            </div>
+            <div className="space-y-2">
                 <p>
                     Tengo habilidades en tecnologías del desarrollo front-end,
                     como{" "}

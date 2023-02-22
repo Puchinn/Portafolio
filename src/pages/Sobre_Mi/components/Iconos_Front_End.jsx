@@ -10,7 +10,7 @@ import github from "../../../assets/tecnologias_svg/github.svg"
 
 function Iconos_Front_End() {
     return (
-        <div className="flex space-x-3">
+        <div className="flex flex-wrap justify-center md:justify-start space-x-1 md:space-x-3">
             <img className="w-14" src={html} title="HTML" alt="html_svg" />
             <img className="w-14" src={css} title="CSS" alt="css_svg" />
             <img className="w-12" src={js} title="JAVA SCRIPT" alt="js_svg" />

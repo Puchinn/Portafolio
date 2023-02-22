@@ -1,17 +1,17 @@
 function Notificacion({ setMostrar }) {
     return (
         <div className="bottom-0 p-4">
-            <div className="relative flex items-center justify-between gap-4 rounded-lg bg-indigo-600 px-4 py-3 text-white shadow-lg">
+            <div className="absolute left-0 right-0 bottom-4 flex items-center justify-between gap-4 rounded-lg bg-indigo-600 px-4 py-3 text-white shadow-lg">
                 <p className="text-sm font-medium">
                     Mensaje enviado correctamente!
                 </p>
 
                 <button
-                    onClick={ async () => {
+                    onClick={async () => {
                         setMostrar(false)
-                        setTimeout(()=>{
+                        setTimeout(() => {
                             window.location.reload()
-                        },500)
+                        }, 500)
                     }}
                     className="shrink-0 rounded-lg bg-black/10 p-1 transition hover:bg-black/20"
                 >
