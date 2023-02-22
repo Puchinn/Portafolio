@@ -1,10 +1,12 @@
 import Menu from "./Menu"
 import { Outlet } from "react-router-dom"
+import MenuResponsive from "./MenuResponsive"
 
 function Contenedor() {
     return (
-        <div className="flex h-screen w-screen items-center justify-center">
-            <div className="relative flex min-h-[700px] w-3/4 max-w-7xl items-center justify-center overflow-hidden rounded-2xl bg-white bg-opacity-50 py-3 dark:border-none dark:bg-black dark:bg-opacity-50 ">
+        <div className="flex h-screen w-screen items-center justify-center px-1 py-1">
+            <div className="relative  h-full w-full overflow-y-scroll rounded-md bg-white bg-opacity-50 dark:border-none dark:bg-black dark:bg-opacity-50 md:rounded-2xl xl:grid xl:max-h-[700px] xl:w-5/6 xl:max-w-7xl xl:items-center xl:overflow-hidden">
+                <MenuResponsive />
                 <Outlet />
             </div>
             <Menu />
