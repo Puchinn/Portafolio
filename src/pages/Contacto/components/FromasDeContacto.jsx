@@ -1,7 +1,7 @@
 import gmail from "../../../assets/gmail.svg"
 import whatssapp from "../../../assets/whatssapp.svg"
 
-function Formas_de_contacto() {
+function FormasDeContacto() {
     return (
         <div className="mx-auto space-y-5 pt-10 pb-4">
             <div className="flex items-center space-x-4">
@@ -26,4 +26,4 @@ function Formas_de_contacto() {
     )
 }
 
-export default Formas_de_contacto
+export default FormasDeContacto

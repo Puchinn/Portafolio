@@ -1,4 +1,4 @@
-function Input_nombre() {
+function InputNombre() {
     return (
         <div className="flex flex-col text-start">
             <label
@@ -19,4 +19,4 @@ function Input_nombre() {
     )
 }
 
-export default Input_nombre
+export default InputNombre

@@ -1,6 +1,6 @@
-import Iconos_Front_End from "./Iconos_Front_End"
+import Iconos from "./Iconos"
 
-function Texto_Sobre_Mi() {
+function TextoSobreMi() {
     return (
         <div className="space-y-4 px-4 text-lg tracking-wider text-gray-900 dark:text-gray-100 md:text-left">
             <div>
@@ -22,7 +22,7 @@ function Texto_Sobre_Mi() {
                     dando por obvio{" "}
                     <strong className="dark:text-white"> Git y GitHub</strong>.
                 </p>
-                <Iconos_Front_End />
+                <Iconos />
             </div>
             <p>
                 Me interesa aprender tecnologías famosas y que tienen años en el
@@ -49,4 +49,4 @@ function Texto_Sobre_Mi() {
     )
 }
 
-export default Texto_Sobre_Mi
+export default TextoSobreMi

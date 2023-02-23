@@ -1,11 +1,11 @@
-import BotonMenu from "./BotonMenu"
+import MenuLink from "./MenuLink"
 
 function Menu() {
     return (
         <nav className="hidden flex-col space-y-5 xl:flex ">
-            <BotonMenu url="sobremi" />
-            <BotonMenu url="trabajo" />
-            <BotonMenu url="contacto" />
+            <MenuLink url="sobremi" />
+            <MenuLink url="trabajo" />
+            <MenuLink url="contacto" />
         </nav>
     )
 }

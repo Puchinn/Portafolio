@@ -1,4 +1,4 @@
-function Titulo_de_Pagina({ titulo }) {
+function Tiutlo({ titulo }) {
     return (
         <h1 className="border-b border-gray-400 py-5 pl-5 text-4xl font-thin text-slate-700 dark:text-white md:pl-10">
             {titulo}
@@ -6,4 +6,4 @@ function Titulo_de_Pagina({ titulo }) {
     )
 }
 
-export default Titulo_de_Pagina
+export default Tiutlo

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 
-function Animacion_paginas({ children }) {
+function AnimarPaginas({ children }) {
     return (
         <motion.div
             className="w-full"
@@ -13,4 +13,4 @@ function Animacion_paginas({ children }) {
     )
 }
 
-export default Animacion_paginas
+export default AnimarPaginas

@@ -1,11 +1,11 @@
-import Background from "./components/Background"
+import FondoDePagina from "./components/FondoDePagina"
 import Contenedor from "./components/Contenedor"
 
 function App() {
     return (
         <>
             <Contenedor />
-            <Background />
+            <FondoDePagina />
         </>
     )
 }

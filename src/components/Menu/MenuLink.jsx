@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom"
 
-function BotonMenu({ url }) {
+function MenuLink({ url }) {
     return (
         <NavLink
             to={url}
@@ -9,4 +9,4 @@ function BotonMenu({ url }) {
     )
 }
 
-export default BotonMenu
+export default MenuLink

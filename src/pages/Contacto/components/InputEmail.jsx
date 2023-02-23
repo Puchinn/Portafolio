@@ -1,4 +1,4 @@
-function Input_email() {
+function InputEmail() {
     return (
         <div className="flex flex-col text-start">
             <label
@@ -19,4 +19,4 @@ function Input_email() {
     )
 }
 
-export default Input_email
+export default InputEmail

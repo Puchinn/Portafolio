@@ -1,9 +1,9 @@
-import Titulo_de_Pagina from "../components/Titulo_de_Pagina"
+import Titulo from "../components/Titulo"
 
 function Trabajo(){
     return (
         <div className="">
-            <Titulo_de_Pagina  titulo={"Portafolio"} />
+            <Titulo  titulo={"Portafolio"} />
         </div>
     )
 }

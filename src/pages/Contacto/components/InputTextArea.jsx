@@ -1,4 +1,4 @@
-function Input_textarea() {
+function InputTextArea() {
     return (
         <div className="flex flex-col text-start">
             <label
@@ -22,4 +22,4 @@ function Input_textarea() {
     )
 }
 
-export default Input_textarea
+export default InputTextArea

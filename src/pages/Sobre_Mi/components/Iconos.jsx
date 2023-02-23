@@ -1,14 +1,14 @@
-import html from "../../../assets/tecnologias_svg/html.svg"
-import css from "../../../assets/tecnologias_svg/css.svg"
-import js from "../../../assets/tecnologias_svg/js.svg"
-import tailwindcss from "../../../assets/tecnologias_svg/tailwindcss.svg"
-import react from "../../../assets/tecnologias_svg/react.svg"
-import vitejs from "../../../assets/tecnologias_svg/vitejs.svg"
-import git from "../../../assets/tecnologias_svg/git.svg"
-import npm from "../../../assets/tecnologias_svg/npm.svg"
-import github from "../../../assets/tecnologias_svg/github.svg"
+import html from "../../../assets/tecnologias/html.svg"
+import css from "../../../assets/tecnologias/css.svg"
+import js from "../../../assets/tecnologias/js.svg"
+import tailwindcss from "../../../assets/tecnologias/tailwindcss.svg"
+import react from "../../../assets/tecnologias/react.svg"
+import vitejs from "../../../assets/tecnologias/vitejs.svg"
+import git from "../../../assets/tecnologias/git.svg"
+import npm from "../../../assets/tecnologias/npm.svg"
+import github from "../../../assets/tecnologias/github.svg"
 
-function Iconos_Front_End() {
+function Iconos() {
     return (
         <div className="flex flex-wrap justify-center md:justify-start space-x-1 md:space-x-3">
             <img className="w-14" src={html} title="HTML" alt="html_svg" />
@@ -34,4 +34,4 @@ function Iconos_Front_End() {
     )
 }
 
-export default Iconos_Front_End
+export default Iconos

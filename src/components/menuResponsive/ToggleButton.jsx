@@ -6,7 +6,7 @@ function ToggleButton() {
 
     return (
         <label
-            for="cambiarColor"
+            htmlFor="cambiarColor"
             className="relative h-8 w-10 cursor-pointer self-center"
         >
             <input

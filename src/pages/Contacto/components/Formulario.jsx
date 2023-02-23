@@ -1,8 +1,8 @@
 import { useForm } from "@formspree/react"
 import { useState } from "react"
-import Input_nombre from "./Input_nombre"
-import Input_email from "./Input_email"
-import Input_textarea from "./Input_textarea"
+import InputNombre from "./InputNombre"
+import InputEmail from "./InputEmail"
+import InputTextArea from "./InputTextArea"
 import Notificacion from "./Notificacion"
 
 function Formulario() {
@@ -19,9 +19,9 @@ function Formulario() {
                 onSubmit={handleSubmit}
                 className="mx-auto mt-2 mb-0 space-y-2"
             >
-                <Input_nombre />
-                <Input_email />
-                <Input_textarea />
+                <InputNombre />
+                <InputEmail />
+                <InputTextArea />
 
                 <button
                     disabled={state.submitting}

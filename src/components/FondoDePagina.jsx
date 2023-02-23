@@ -3,7 +3,7 @@ import bgOscuro from "../assets/t4.svg"
 import { useContext } from "react"
 import { ThemeContext } from "../context/darkTheme"
 
-function Background() {
+function FondoDePagina() {
     const [color] = useContext(ThemeContext)
     return (
         <>
@@ -15,4 +15,4 @@ function Background() {
     )
 }
 
-export default Background
+export default FondoDePagina

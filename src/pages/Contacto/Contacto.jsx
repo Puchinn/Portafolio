@@ -1,10 +1,10 @@
-import Animacion_paginas from "../../components/Animacion_paginas"
+import AnimarPaginas from "../../components/AnimarPaginas"
 import Formulario from "./components/Formulario"
-import Formas_de_contacto from "./components/Formas_de_contacto"
+import FromasDeContacto from "./components/FromasDeContacto"
 
 function Contacto() {
     return (
-        <Animacion_paginas>
+        <AnimarPaginas>
             <div className="space-y-3 px-3 dark:text-white xl:flex">
                 <div className="flex flex-col justify-center 2xl:px-10">
                     <h1 className="py-3 text-3xl text-gray-800 dark:text-white xl:text-center">
@@ -15,13 +15,13 @@ function Contacto() {
                         quieres decir hola, no dudes en ponerte en contacto a
                         través de cualquiera de las opciones a continuación:
                     </p>
-                    <Formas_de_contacto />
+                    <FromasDeContacto />
                 </div>
                 <div className="w-full xl:px-2">
                     <Formulario />
                 </div>
             </div>
-        </Animacion_paginas>
+        </AnimarPaginas>
     )
 }
 

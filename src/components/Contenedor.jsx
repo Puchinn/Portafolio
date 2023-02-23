@@ -1,6 +1,6 @@
-import Menu from "./Menu/Menu"
+import Menu from "./menu/Menu"
 import { Outlet } from "react-router-dom"
-import MenuResponsive from "./Menu_responsive/MenuResponsive"
+import MenuResponsive from "./menuResponsive/MenuResponsive"
 
 function Contenedor() {
     return (

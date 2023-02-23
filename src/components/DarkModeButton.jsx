@@ -1,7 +1,7 @@
 import { useContext } from "react"
 import { ThemeContext } from "../context/darkTheme"
 
-function BotonDM() {
+function DarkModeButton() {
     const [color, setColor] = useContext(ThemeContext)
 
     return (
@@ -36,4 +36,4 @@ function BotonDM() {
     )
 }
 
-export default BotonDM
+export default DarkModeButton
