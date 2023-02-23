@@ -14,7 +14,7 @@ function Intro() {
                 <h1 className="text-5xl sm:text-7xl text-white">Desarrollador Web</h1>
                 <h1 className="text-4xl sm:text-6xl text-rose-600">Front-End</h1>
                 <Link
-                    to="portafolio/sobremi"
+                    to="esteban/sobremi"
                     className="group relative mt-5 inline-block text-sm font-medium text-white focus:outline-none focus:ring"
                 >
                     <span className="absolute inset-0 border border-rose-600 group-active:border-rose-500"></span>

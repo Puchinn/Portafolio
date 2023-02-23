@@ -9,31 +9,26 @@ import Trabajo from "../pages/Trabajo"
 const rutas = createBrowserRouter([
     {
         path: "/",
-        element: <App />,
-        children: [
+        element: <Intro />,
+    },
+    {
+        path:"/esteban",
+        element:<App />,
+        children:[
             {
-                path: "/",
-                element: <Intro />,
+                path:"/esteban/sobremi",
+                element:<Sobre_Mi />
             },
             {
-                path: "/portafolio",
-                element: <Contenedor />,
-                children: [
-                    {
-                        path: "/portafolio/sobremi",
-                        element: <Sobre_Mi />,
-                    },
-                    {
-                        path: "/portafolio/trabajo",
-                        element: <Trabajo />,
-                    },
-                    {
-                        path: "/portafolio/contacto",
-                        element: <Contacto />,
-                    },
-                ],
+                path:"/esteban/trabajo",
+                element:<Trabajo />
             },
-        ],
+            {
+                path:"/esteban/contacto",
+                element:<Contacto />
+            },
+            
+        ]
     },
 ])
 

@@ -1,10 +1,10 @@
-import { Outlet } from "react-router-dom"
 import Background from "./components/Background"
+import Contenedor from "./components/Contenedor"
 
 function App() {
     return (
         <>
-            <Outlet />
+            <Contenedor />
             <Background />
         </>
     )
