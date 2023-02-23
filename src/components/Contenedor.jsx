@@ -1,4 +1,4 @@
-import Menu from "./menu/Menu"
+import Menu from "./Menu/Menu"
 import { Outlet } from "react-router-dom"
 import MenuResponsive from "./menuResponsive/MenuResponsive"
 
