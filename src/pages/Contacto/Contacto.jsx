@@ -1,7 +1,6 @@
 import Animacion_paginas from "../../components/Animacion_paginas"
-import Formulario from "./Formulario"
-import gmail from "../../assets/gmail.svg"
-import whatssapp from "../../assets/whatssapp.svg"
+import Formulario from "./components/Formulario"
+import Formas_de_contacto from "./components/Formas_de_contacto"
 
 function Contacto() {
     return (
@@ -16,34 +15,7 @@ function Contacto() {
                         quieres decir hola, no dudes en ponerte en contacto a
                         través de cualquiera de las opciones a continuación:
                     </p>
-                    <div className="flex w-full justify-center pt-10 pb-4">
-                        <div className="space-y-5">
-                            <div className="flex items-center space-x-4">
-                                <img
-                                    className="w-16 xl:w-24"
-                                    src={gmail}
-                                    alt="gmail svg"
-                                />
-                                <div>
-                                    <h1 className="text-lg">
-                                        Correo Electronico
-                                    </h1>
-                                    <p>sayagoo823@gmail.com</p>
-                                </div>
-                            </div>
-                            <div className="flex items-center space-x-4">
-                                <img
-                                    className="w-16 xl:w-24"
-                                    src={whatssapp}
-                                    alt="whatssapp svg"
-                                />
-                                <div>
-                                    <h1 className="text-lg">WhatssApp</h1>
-                                    <p>+54 3572 616936</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <Formas_de_contacto />
                 </div>
                 <div className="w-full xl:px-2">
                     <Formulario />

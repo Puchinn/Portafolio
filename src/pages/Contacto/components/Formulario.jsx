@@ -1,9 +1,9 @@
 import { useForm } from "@formspree/react"
 import { useState } from "react"
-import Input_nombre from "./components/Input_nombre"
-import Input_email from "./components/Input_email"
-import Input_textarea from "./components/Input_textarea"
-import Notificacion from "./components/Notificacion"
+import Input_nombre from "./Input_nombre"
+import Input_email from "./Input_email"
+import Input_textarea from "./Input_textarea"
+import Notificacion from "./Notificacion"
 
 function Formulario() {
     const [state, handleSubmit] = useForm("xjvdwojz")
