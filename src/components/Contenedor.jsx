@@ -1,4 +1,4 @@
-import Menu from "./menu/Menu"
+import Menu from "./nav/Menu"
 import { Outlet } from "react-router-dom"
 
 function Contenedor() {
