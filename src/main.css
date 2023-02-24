@@ -2,9 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
+html {
     overflow: hidden;
     scrollbar-width: none;
+}
+::-webkit-scrollbar {
+    width: 0px;
 }
 
 @layer components {
