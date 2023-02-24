@@ -4,6 +4,7 @@
 
 html{
     overflow: hidden;
+    scrollbar-width: none;
 }
 
 @layer components {
