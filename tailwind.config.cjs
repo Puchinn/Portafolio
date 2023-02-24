@@ -6,7 +6,7 @@ module.exports = {
       animation: {
         "text-focus-in": "text-focus-in 1.9s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.5s both",
         "backanimado": "backanimado 30s ease infinite",
-        "entrada-suave": "entrada-suave .6s cubic-bezier(0.480, -0.550, 0.365, 1.390)"
+        "entrada-suave": "entrada-suave .6s cubic-bezier(0.880, -0.550, 0.365, 1.390)"
       }
       ,
       keyframes: {
@@ -20,7 +20,7 @@ module.exports = {
           "100%": { "background-position": "99% 0%" }
         },
         "entrada-suave": {
-          "0%": { transform: "translateY(200%)" },
+          "0%": { transform: "translateY(300%)" },
           "100%": { transform: "translateY(0)" }
         }
       }
