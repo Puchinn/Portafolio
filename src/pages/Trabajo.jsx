@@ -2,7 +2,7 @@ import Titulo from "../components/Titulo"
 
 function Trabajo(){
     return (
-        <div className="">
+        <div className="animate-entrada-suave">
             <Titulo  titulo={"Portafolio"} />
         </div>
     )
