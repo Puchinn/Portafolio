@@ -3,7 +3,7 @@ import Intro from "../pages/Intro"
 import App from "../App"
 import SobreMi from "../pages/Sobre_Mi/SobreMi"
 import Contacto from "../pages/Contacto/Contacto"
-import Trabajo from "../pages/Trabajo"
+import Portafolio from "../pages/Portafolio"
 
 const rutas = createBrowserRouter([
     {
@@ -19,8 +19,8 @@ const rutas = createBrowserRouter([
                 element:<SobreMi />
             },
             {
-                path:"/esteban/trabajo",
-                element:<Trabajo />
+                path:"/esteban/portafolio",
+                element:<Portafolio />
             },
             {
                 path:"/esteban/contacto",
