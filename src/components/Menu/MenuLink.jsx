@@ -1,11 +1,13 @@
 import { NavLink } from "react-router-dom"
 
-function MenuLink({ url }) {
+function MenuLink({ to, text }) {
     return (
         <NavLink
-            to={url}
-            className="h-24 w-11 rounded-r-lg bg-white opacity-30 transition-[width] ease-in dark:bg-black [&.active]:w-14 [&.active]:opacity-50"
-        ></NavLink>
+            className="border-gray-600 px-2 py-2 text-lg [&.active]:border-b [&.active]:text-gray-800 dark:[&.active]:border-white dark:[&.active]:text-white "
+            to={to}
+        >
+            {text}
+        </NavLink>
     )
 }
 
