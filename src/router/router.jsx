@@ -1,33 +1,32 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
-import Intro from "../pages/Intro"
 import App from "../App"
 import SobreMi from "../pages/Sobre_Mi/SobreMi"
 import Contacto from "../pages/Contacto/Contacto"
 import Portafolio from "../pages/Portafolio"
+import Inicio from "../pages/Inicio"
 
 const rutas = createBrowserRouter([
     {
         path: "/",
-        element: <Intro />,
-    },
-    {
-        path:"/esteban",
-        element:<App />,
-        children:[
+        element: <App />,
+        children: [
             {
-                path:"/esteban/sobremi",
-                element:<SobreMi />
+                path: "/",
+                element: <Inicio />,
             },
             {
-                path:"/esteban/portafolio",
-                element:<Portafolio />
+                path: "/sobremi",
+                element: <SobreMi />,
             },
             {
-                path:"/esteban/contacto",
-                element:<Contacto />
+                path: "/portafolio",
+                element: <Portafolio />,
             },
-            
-        ]
+            {
+                path: "/contacto",
+                element: <Contacto />,
+            },
+        ],
     },
 ])
 
