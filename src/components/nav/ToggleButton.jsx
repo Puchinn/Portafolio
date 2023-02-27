@@ -7,7 +7,7 @@ function ToggleButton() {
     return (
         <label
             htmlFor="cambiarColor"
-            className="relative h-8 w-10 cursor-pointer self-center xl:hidden"
+            className="relative inline-block h-8 w-10 cursor-pointer self-center xl:hidden"
         >
             <input
                 checked={color === "dark" ? true : false}

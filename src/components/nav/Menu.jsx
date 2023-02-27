@@ -6,8 +6,11 @@ import BotonMenu from "./BotonMenu"
 function Menu() {
     const [isActive, setIsActive] = useState(false)
     return (
-        <div className="sticky top-0 z-10 h-min rounded-b-2xl bg-white bg-opacity-70 p-2 text-gray-400 backdrop-blur-sm dark:bg-black dark:bg-opacity-40">
-            <BotonMenu isActive={isActive} setIsActive={setIsActive} />
+        <div className="sticky top-0 z-10 h-min rounded-b-2xl bg-white bg-opacity-70 p-2 text-gray-400 backdrop-blur-sm dark:bg-black dark:bg-opacity-40 md:flex md:flex-row-reverse md:justify-end">
+            <div className="flex justify-between">
+                <BotonMenu isActive={isActive} setIsActive={setIsActive} />
+                <ToggleButton />
+            </div>
             <nav
                 className={`flex flex-col ${
                     isActive ? "block" : "hidden"
@@ -17,7 +20,6 @@ function Menu() {
                 <MenuLink to={"sobremi"} text="📋 Sobre mi" />
                 <MenuLink to={"portafolio"} text="💼 Portafolio" />
                 <MenuLink to={"contacto"} text="🚀 Contacto" />
-                <ToggleButton />
             </nav>
         </div>
     )
