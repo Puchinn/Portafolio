@@ -1,6 +1,4 @@
 import { useState, createContext, useEffect } from "react"
-import fondoClaro from "../assets/fondos/fondoClaro.png"
-import fondoOscuro from "../assets/fondos/fondoOscuro.png"
 import DarkModeButton from "../components/DarkModeButton"
 
 export const ThemeContext = createContext(null)
@@ -25,15 +23,9 @@ function ContextContainer({ children }) {
 
     return (
         <ThemeContext.Provider value={[color, setColor]}>
-            <div className={`App ${ color === "dark" ? "dark" : "" } bg-cover bg-no-repeat`}
-                style={{
-                    backgroundImage: `url(${
-                        color === "dark" ? fondoOscuro : fondoClaro
-                    })`,
-                }}
-            >
-                {children}
+            <div className={`App ${color === "dark" ? "dark" : ""}`}>
                 <DarkModeButton />
+                {children}
             </div>
         </ThemeContext.Provider>
     )

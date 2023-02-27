@@ -11,7 +11,7 @@ function DarkModeButton() {
                 setColor(newColorMode)
                 localStorage.setItem("colorMode", newColorMode)
             }}
-            className="absolute top-3 hidden xl:block right-2 animate-text-focus-in rounded-full p-3 opacity-80 hover:bg-white hover:bg-opacity-20 hover:opacity-100"
+            className="absolute top-3 right-2 rounded-full p-3 opacity-80 hover:bg-white hover:bg-opacity-20 hover:opacity-100"
         >
             <svg
                 className="h-auto w-20 fill-white "
