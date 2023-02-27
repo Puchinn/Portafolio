@@ -1,5 +1,4 @@
 import { useState, createContext, useEffect } from "react"
-import DarkModeButton from "../components/DarkModeButton"
 
 export const ThemeContext = createContext(null)
 
@@ -24,7 +23,6 @@ function ContextContainer({ children }) {
     return (
         <ThemeContext.Provider value={[color, setColor]}>
             <div className={`App ${color === "dark" ? "dark" : ""}`}>
-                <DarkModeButton />
                 {children}
             </div>
         </ThemeContext.Provider>
