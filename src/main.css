@@ -2,8 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-    overflow: hidden;
+body {
     scrollbar-width: none;
 }
 ::-webkit-scrollbar {
