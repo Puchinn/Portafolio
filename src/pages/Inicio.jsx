@@ -4,7 +4,7 @@ function Inicio() {
     return (
         <div className="flex animate-entrada-suave flex-col justify-center pt-8 pb-4 sm:pt-14 lg:flex-row lg:items-center lg:space-x-7 lg:pt-28">
             <div className="mx-auto pb-3 lg:mx-0">
-                <img className="w-60 sm:w-72 lg:w-96" src={svg} alt="svg programador" width={270} height={195} />
+                <img className="w-72 lg:w-96" src={svg} alt="svg programador" width={270} height={195} />
             </div>
             <div className="px-3 text-center">
                 <h1 className="text-3xl font-bold text-[#fa5f49] sm:text-5xl">
