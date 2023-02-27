@@ -22,7 +22,7 @@ function ContextContainer({ children }) {
 
     return (
         <ThemeContext.Provider value={[color, setColor]}>
-            <div className={`App ${color === "dark" ? "dark" : ""}`}>
+            <div className={`App ${color === "dark" ? "dark" : ""} flex h-screen w-screen items-center justify-center px-1 py-1`}>
                 {children}
             </div>
         </ThemeContext.Provider>
