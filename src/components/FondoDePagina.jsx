@@ -1,26 +1,10 @@
 import fondoClaro from "../assets/fondos/fondoClaro.png"
 import fondoOscuro from "../assets/fondos/fondoOscuro.png"
-import { useContext, useEffect } from "react"
+import { useContext } from "react"
 import { ThemeContext } from "../context/darkTheme"
-
-function cacheImages(images) {
-    return images.map((src) => {
-        return new Promise((resolve, reject) => {
-            const img = new Image()
-            img.src = src
-            img.onload = resolve
-            img.onerror = reject
-        })
-    })
-}
 
 function FondoDePagina() {
     const [color] = useContext(ThemeContext)
-
-    useEffect(() => {
-        const images = [fondoOscuro, fondoClaro]
-        cacheImages(images)
-    }, [color])
 
     return (
         <div
