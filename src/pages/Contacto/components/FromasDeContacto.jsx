@@ -10,11 +10,11 @@ function FormasDeContacto() {
                     viewBox="0 0 512 512"
                     fill="#000000"
                 >
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                     <g
                         id="SVGRepo_tracerCarrier"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                     ></g>
                     <g id="SVGRepo_iconCarrier">
                         <rect
@@ -28,14 +28,14 @@ function FormasDeContacto() {
                             d="M120 392V151.075h272V392"
                         ></path>
                         <path
-                            fill-opacity=".05"
+                            fillOpacity=".05"
                             d="M256 285L120 392l-4-212"
                         ></path>
                         <path
                             fill="#d54c3f"
                             d="M120 392H97c-12 0-22-10-22-23V143h45z"
                         ></path>
-                        <path fill-opacity=".08" d="M317 392h77V159H82"></path>
+                        <path fillOpacity=".08" d="M317 392h77V159H82"></path>
                         <path fill="#f2f2f2" d="M97 121h318L256 234"></path>
                         <path
                             fill="#b63524"
@@ -44,8 +44,8 @@ function FormasDeContacto() {
                         <path
                             fill="none"
                             stroke="#de5145"
-                            stroke-linecap="round"
-                            stroke-width="44"
+                            strokeLinecap="round"
+                            strokeWidth="44"
                             d="M97 143l159 115 159-115"
                         ></path>
                     </g>
@@ -62,11 +62,11 @@ function FormasDeContacto() {
                     xmlns="http://www.w3.org/2000/svg"
                     fill="#000000"
                 >
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                     <g
                         id="SVGRepo_tracerCarrier"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                     ></g>
                     <g id="SVGRepo_iconCarrier">
                         {" "}
