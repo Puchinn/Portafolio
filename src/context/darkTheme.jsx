@@ -1,4 +1,6 @@
 import { useState, createContext, useEffect } from "react"
+import fondoClaro from "../assets/fondos/fondoClaro.png"
+import fondoOscuro from "../assets/fondos/fondoOscuro.png"
 import DarkModeButton from "../components/DarkModeButton"
 
 export const ThemeContext = createContext(null)
@@ -14,18 +16,24 @@ function ContextContainer({ children }) {
             const colorModeQuery = window.matchMedia(
                 "(prefers-color-scheme: dark)"
             )
-            setColor(colorModeQuery.matches ? 'dark' : 'light')
-            colorModeQuery.addEventListener("change",(event) => {
-                setColor(event.matches ? 'dark' : 'light')
+            setColor(colorModeQuery.matches ? "dark" : "light")
+            colorModeQuery.addEventListener("change", (event) => {
+                setColor(event.matches ? "dark" : "light")
             })
         }
     }, [])
 
     return (
         <ThemeContext.Provider value={[color, setColor]}>
-            <div className={`App ${color === "dark" ? "dark" : ""}`}>
-                <DarkModeButton />
+            <div className={`App ${ color === "dark" ? "dark" : "" } bg-cover bg-no-repeat`}
+                style={{
+                    backgroundImage: `url(${
+                        color === "dark" ? fondoOscuro : fondoClaro
+                    })`,
+                }}
+            >
                 {children}
+                <DarkModeButton />
             </div>
         </ThemeContext.Provider>
     )
