@@ -4,7 +4,7 @@ import Footer from "./footer/Footer"
 
 function Contenedor() {
     return (
-        <div className="relative h-full w-full overflow-y-scroll rounded-md border bg-white bg-opacity-50 pb-5  dark:bg-black dark:bg-opacity-60 md:rounded-2xl xl:max-h-[700px] xl:w-5/6 xl:max-w-7xl">
+        <div className="relative h-full w-full overflow-y-scroll rounded-md border bg-white bg-opacity-50 pb-5  dark:bg-black dark:bg-opacity-60 md:rounded-2xl xl:max-h-[700px]  xl:max-w-7xl">
             <Menu />
             <Outlet />
             <Footer />
