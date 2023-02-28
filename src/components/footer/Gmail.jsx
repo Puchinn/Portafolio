@@ -1,6 +1,6 @@
 function Gmail() {
     return (
-        <a href="mailto:sayagoo823@gmail.com">
+        <a href="mailto:sayagoo823@gmail.com" target="_blank">
             <svg
                 className="w-8"
                 xmlns="http://www.w3.org/2000/svg"

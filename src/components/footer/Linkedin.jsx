@@ -1,9 +1,6 @@
 function Linkedin() {
     return (
-        <a
-            href="www.linkedin.com/in/esteban-sayago-a80796241"
-            target={"_blank"}
-        >
+        <a href="https://www.linkedin.com/in/esteban-sayago-a80796241" target="_blank">
             <svg
                 className="w-10"
                 viewBox="0 0 32 32"
