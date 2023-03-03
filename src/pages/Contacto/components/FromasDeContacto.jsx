@@ -84,7 +84,7 @@ function FormasDeContacto() {
                 </svg>
                 <div>
                     <h1 className="text-lg">Discord</h1>
-                    <p>!Puchinn#4041</p>
+                    <a className="underline font-bold" href="https://discordapp.com/users/392773520838492160" target="_blank">Hablar en Discord</a>
                 </div>
             </div>
         </div>
