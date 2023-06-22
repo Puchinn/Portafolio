@@ -1,15 +1,12 @@
-import { useContext } from 'react'
-import { ThemeContext } from '../../../context/darkTheme'
-
 function DarkModeButton() {
-  const [color, setColor] = useContext(ThemeContext)
+  const actualizarTheme = () => {
+    const app = document.querySelector('.App')
+    app.classList.toggle('dark')
+  }
 
   return (
     <button
-      onClick={() => {
-        const newColorMode = color === 'dark' ? 'light' : 'dark'
-        setColor(newColorMode)
-      }}
+      onClick={actualizarTheme}
       className='rounded-full opacity-80 hover:bg-white hover:bg-opacity-20 hover:opacity-100 sm:mr-3'
     >
       <svg
