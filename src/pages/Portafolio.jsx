@@ -5,7 +5,8 @@ function Portafolio() {
   return (
     <div className='animate-entrada-suave text-slate-700 dark:text-white'>
       <Titulo titulo={'Proyectos'} />
-      <div class='mx-auto max-w-5xl px-4 py-8'>
+      <h1 className='text-center text-7xl'>😳</h1>
+      {/* <div class='mx-auto max-w-5xl px-4 py-8'>
         <section class='rounded-lg bg-gray-100/10 p-8'>
           <div class='grid grid-cols-1 lg:grid-cols-3 lg:items-center lg:gap-12'>
             <img
@@ -74,7 +75,7 @@ function Portafolio() {
             </blockquote>
           </div>
         </section>
-      </div>
+      </div> */}
     </div>
   )
 }
