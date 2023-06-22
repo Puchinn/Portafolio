@@ -19,7 +19,6 @@ function Menu() {
         <MenuLink to={'/'} text='🏠 Inicio' />
         <MenuLink to={'sobremi'} text='📋 Sobre mi' />
         <MenuLink to={'portafolio'} text='💼 Portafolio' />
-        <MenuLink to={'contacto'} text='🚀 Contacto' />
       </nav>
     </header>
   )
