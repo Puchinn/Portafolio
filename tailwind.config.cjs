@@ -17,6 +17,10 @@ module.exports = {
         }
       }
     },
+    backgroundImage: {
+      "fondoOscuro": "url('./src/assets/fondos/fondoOscuro.png')",
+      "fondoClaro": "url('./src/assets/fondos/fondoClaro.png')"
+    }
   },
   plugins: [],
   darkMode: 'class'
