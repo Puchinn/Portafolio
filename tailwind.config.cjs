@@ -18,8 +18,8 @@ module.exports = {
       }
     },
     backgroundImage: {
-      "fondoOscuro": "url('/src/assets/fondos/fondoOscuro.png')",
-      "fondoClaro": "url('/src/assets/fondos/fondoClaro.png')"
+      "fondoOscuro": "url('/src/assets/fondos/fondoOscuro.webp')",
+      "fondoClaro": "url('/src/assets/fondos/fondoClaro.webp')"
     }
   },
   plugins: [],
