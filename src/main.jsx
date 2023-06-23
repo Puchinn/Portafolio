@@ -4,7 +4,7 @@ import './main.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App'
 import SobreMi from './pages/Sobre_Mi/SobreMi'
-import Portafolio from './pages/Portafolio'
+import Portafolio from './pages/Portafolio/Portafolio'
 import Inicio from './pages/Inicio'
 
 const rutas = createBrowserRouter([
